@@ -4,34 +4,15 @@ to verify that you're working in the right files.`)
 
 console.dir(TweenMax);
 
-/* let header = document.querySelectorAll('.header-scroll') */
-
-/* console.log(header); */
-
-/* let headerAnimation = TweenMax.fromTo(
-	".header-scroll",
-	0.5,
-	{x: '-=100%'},
-	{x: '+=100%'}
-); */
-
-/* let headerAnimation = TweenMax.from(
-	".header-scroll",
-	0.5,
-	{x: '-=100%'}
-
-); */
+const headerAnimation = TweenMax.to('.header-scroll', 1, { // object
+	x: "100px" // key 
+});
 
 
-const staggeredHeaders = TweenMax.staggerFrom(
-	'.header-scroll',
+
+/* const staggeredHeaders = TweenMax.staggerFrom( //object
+	'.header-scroll',  // key
 	0.5,
 	{x:'-=100%'},
 	0.5
-);
-
-let yoyo = shoes.yoyo();
-
-TweenMax.to(mc, 1, {x:100, repeat:1, yoyo:true});
-
-console.log('potato')
+);*/
