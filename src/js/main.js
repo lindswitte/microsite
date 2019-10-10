@@ -4,14 +4,58 @@ to verify that you're working in the right files.`)
 
 console.dir(TweenMax);
 
-const headerAnimation = TweenMax.to('.header-scroll', 1, { // object
-	x: "100px" // key 
-});
+// const headerToAnimation = TweenMax.to(
+// 	//target
+// 	'.header-scroll',
+// 	// duration 
+// 	1, 
+// 	//vars
+// 	{
+// 		x: "100px"
+// 	}
+// );
+
+
+// const headerFromAnimation = TweenMax.from(
+// 	//target
+// 	'.header-scroll',
+// 	// duration 
+// 	1, 
+// 	//vars
+// 	{
+// 		x: "100px",
+// 		delay: 2
+// 	}
+// );
 
 
 
-/* const staggeredHeaders = TweenMax.staggerFrom( //object
-	'.header-scroll',  // key
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* const staggeredHeaders = TweenMax.staggerFrom(
+	'.header-scroll',  
 	0.5,
 	{x:'-=100%'},
 	0.5
