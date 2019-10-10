@@ -42,14 +42,14 @@ headerAnimation
 	{
 		x:"100px"
 	}
-).from(
+).to(
 	// target
 	".header-scroll",
 	//duration
 	1,
 	//vars
 	{
-		x:"100px"
+		x:"-100px"
 	}
 )
 
