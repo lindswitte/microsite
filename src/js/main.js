@@ -3,6 +3,8 @@ Change this message, and make sure it changes in the browser
 to verify that you're working in the right files.`)
 
 console.dir(TweenMax);
+// declaring a new TweenMax function
+
 
 // const headerToAnimation = TweenMax.to(
 // 	//target
@@ -27,6 +29,10 @@ console.dir(TweenMax);
 // 		delay: 2
 // 	}
 // );
+
+
+
+
 
 // declaring a new TimelineMax function
 
