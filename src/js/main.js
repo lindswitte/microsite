@@ -53,30 +53,56 @@ headerAnimation
 	1,
 	//vars
 	{
-		x:"-100px"
+		x:"0"
 	}
 )
 
-const bodyAnimation = new TimelineMax();
+const shoeAnimation = new TimelineMax();
 
-bodyAnimation
+shoeAnimation
 	.to(
-
+			// target
+		".shoe-container",
+		//duration
+		1,
+		//vars
+		{
+			x:"100px"
+		}
+	).from(
+		// target
+		".shoe-container",
+		//duration
+		1,
+		//vars
+		{
+			x:"0",
+			delay: 2
+		}
 	)
 
-
-
-
-
-	
 const footerAnimation = new TimelineMax();
 
 footerAnimation
 	.to(
-		
+		// target
+		".footer",
+		//duration
+		1,
+		//vars
+		{
+			x:"100px"
+		}
+	).to(
+		// target
+		".footer",
+		//duration
+		1,
+		//vars
+		{
+			x:"0"
+		}
 	)
-
-
 
 
 
