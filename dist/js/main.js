@@ -1,0 +1,2 @@
+"use strict";console.log("Hello World from main.js! \nChange this message, and make sure it changes in the browser \nto verify that you're working in the right files."),console.dir(TweenMax);var staggeredHeaders=TweenMax.staggerFrom(".header-scroll",.5,{x:"-=100%"},.5),yoyo=shoes.yoyo();TweenMax.to(mc,1,{x:100,repeat:1,yoyo:!0}),console.log("potato");
+//# sourceMappingURL=main.js.map
