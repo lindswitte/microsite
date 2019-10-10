@@ -32,7 +32,17 @@ console.dir(TweenMax);
 
 const headerAnimation = new TimelineMax();
 
-headerAnimation.to(
+headerAnimation
+	.to(
+	// target
+	".header-scroll",
+	//duration
+	1,
+	//vars
+	{
+		x:"100px"
+	}
+).from(
 	// target
 	".header-scroll",
 	//duration
