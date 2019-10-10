@@ -1,2 +1,2 @@
-"use strict";console.log("Hello World from main.js! \nChange this message, and make sure it changes in the browser \nto verify that you're working in the right files."),console.dir(TweenMax);
+"use strict";console.log("Hello World from main.js! \nChange this message, and make sure it changes in the browser \nto verify that you're working in the right files."),console.dir(TweenMax);var headerAnimation=new TimelineMax;headerAnimation.to(".header-scroll",1,{x:"100px"});
 //# sourceMappingURL=main.js.map

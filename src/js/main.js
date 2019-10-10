@@ -28,9 +28,20 @@ console.dir(TweenMax);
 // 	}
 // );
 
+// declaring a new TimelineMax function
 
+const headerAnimation = new TimelineMax();
 
-
+headerAnimation.to(
+	// target
+	".header-scroll",
+	//duration
+	1,
+	//vars
+	{
+		x:"100px"
+	}
+)
 
 
 
