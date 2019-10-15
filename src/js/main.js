@@ -81,28 +81,10 @@ shoeAnimation
 		}
 	)
 
-const footerAnimation = new TimelineMax();
+const footerAnimation = footerAnimation.yoyo();
 
 footerAnimation
-	.to(
-		// target
-		".footer",
-		//duration
-		1,
-		//vars
-		{
-			x:"100px"
-		}
-	).to(
-		// target
-		".footer",
-		//duration
-		1,
-		//vars
-		{
-			x:"0"
-		}
-	)
+	.yoyo(true);
 
 
 
