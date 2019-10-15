@@ -57,34 +57,47 @@ headerAnimation
 	}
 )
 
-const shoeAnimation = new TimelineMax();
+const shoeAnimation = new TweenMax();
 
 shoeAnimation
-	.to(
-			// target
-		".shoe-container",
-		//duration
-		1,
-		//vars
-		{
-			x:"100px"
-		}
-	).from(
-		// target
-		".shoe-container",
-		//duration
-		1,
-		//vars
-		{
-			x:"0",
-			delay: 2
-		}
-	)
+	.reverse(4, false)
 
-const footerAnimation = footerAnimation.yoyo();
 
-footerAnimation
-	.yoyo(true);
+
+
+	// .to(
+	// 		// target
+	// 	".shoe-container",
+	// 	//duration
+	// 	1,
+	// 	//vars
+	// 	{
+	// 		x:"100px"
+	// 	}
+	// ).from(
+	// 	// target
+	// 	".shoe-container",
+	// 	//duration
+	// 	1,
+	// 	//vars
+	// 	{
+	// 		x:"0",
+	// 		delay: 2
+	// 	}
+	// )
+
+// const footerAnimation = TweenMax.yoyo();
+
+// footerAnimation
+// 	.yoyo(
+// 	// target
+// 	".footer",
+// 	// duration
+// 	3,
+// 	//vars {
+// 		x:"100"
+// 	}
+// )
 
 
 
