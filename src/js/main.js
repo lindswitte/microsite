@@ -60,7 +60,20 @@ headerAnimation
 const shoeAnimation = new TweenMax();
 
 shoeAnimation
-	.reverse(4, false)
+	.reverse(
+	".shoe-container"
+	4,
+	{
+		x:"100px"
+	}
+	).reverseFrom(
+		".shoe-container",
+		0,
+		{
+			x:"-100px"
+		}
+
+	)
 
 
 
