@@ -6,29 +6,29 @@ console.dir(TweenMax);
 
 // declaring a new TweenMax function
 
-// const headerToAnimation = TweenMax.to(
-// 	//target
-// 	'.header-scroll',
-// 	// duration 
-// 	1, 
-// 	//vars
-// 	{
-// 		x: "100px"
-// 	}
-// );
+const headerToAnimation = TweenMax.to(
+	//target
+	'.header-scroll',
+	// duration 
+	1, 
+	//vars
+	{
+		x: "100px"
+	}
+);
 
 
-// const headerFromAnimation = TweenMax.from(
-// 	//target
-// 	'.header-scroll',
-// 	// duration 
-// 	1, 
-// 	//vars
-// 	{
-// 		x: "100px",
-// 		delay: 2
-// 	}
-// );
+const headerFromAnimation = TweenMax.from(
+	//target
+	'.header-scroll',
+	// duration 
+	1, 
+	//vars
+	{
+		x: "100px",
+		delay: 2
+	}
+);
 
 
 
@@ -61,22 +61,13 @@ const shoeAnimation = new TweenMax();
 
 shoeAnimation
 	.reverse(
-	".shoe-container"
+	".shoe-container",
 	4,
 	{
-		x:"100px"
+		x:"10px"
 	}
-	).reverseFrom(
-		".shoe-container",
-		0,
-		{
-			x:"-100px"
-		}
 
 	)
-
-
-
 
 	// .to(
 	// 		// target
@@ -99,18 +90,18 @@ shoeAnimation
 	// 	}
 	// )
 
-// const footerAnimation = TweenMax.yoyo();
+const footerAnimation = TimelineMax.yoyo();
 
-// footerAnimation
-// 	.yoyo(
-// 	// target
-// 	".footer",
-// 	// duration
-// 	3,
-// 	//vars {
-// 		x:"100"
-// 	}
-// )
+footerAnimation
+	.yoyo(
+	// target
+	".footer",
+	// duration
+	3,
+	//vars {
+		x:"100"
+	}
+)
 
 
 
