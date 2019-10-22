@@ -5,6 +5,7 @@ to verify that you're working in the right files.`)
 console.dir(TweenMax);
 
 // declaring a new TweenMax function
+// Header Animation
 
 const headerToAnimation = TweenMax.to(
 	//target
@@ -17,7 +18,6 @@ const headerToAnimation = TweenMax.to(
 	}
 );
 
-
 const headerFromAnimation = TweenMax.from(
 	//target
 	'.header-scroll',
@@ -26,82 +26,114 @@ const headerFromAnimation = TweenMax.from(
 	//vars
 	{
 		x: "100px",
-		delay: 2
+		delay: .5,
+	}
+);
+
+
+// Shoe Animation
+
+const shoeAnimation = new TimelineMax();
+
+shoeAnimation.staggerTo(
+	'.shoe-container',
+	//target
+	// duration 
+	1, 
+	//vars
+	{
+		x: "+=300px",
+	},
+	0.2
+)
+
+shoeAnimation.to(
+	'.shoe-container',
+	// duration 
+	1, 
+	//vars
+	{
+		x: "-=300px",
+	}
+
+);
+
+
+// Footer Animation
+
+
+const footerFromAnimation = TweenMax.from(
+	//target
+	'.footer',
+	// duration 
+	1, 
+	//vars
+	{
+		y: "100px",
+		delay: .5
+	}
+);
+
+const footerToAnimation = TweenMax.to(
+	//target
+	'.footer',
+	// duration 
+	1, 
+	//vars
+	{
+		y: "100px"
 	}
 );
 
 
 
+
+
+
+
+
+
+
 // declaring a new TimelineMax function
 
-const headerAnimation = new TimelineMax();
+// const headerAnimation = new TimelineMax();
 
-headerAnimation
-	.to(
-	// target
-	".header-scroll",
-	//duration
-	1,
-	//vars
-	{
-		x:"100px"
-	}
-).to(
-	// target
-	".header-scroll",
-	//duration
-	1,
-	//vars
-	{
-		x:"0"
-	}
-)
+// headerAnimation
+// 	.to(
+// 	// target
+// 	".header-scroll",
+// 	//duration
+// 	1,
+// 	//vars
+// 	{
+// 		x:"-=100px"
+// 	}
+// ).to(
+// 	// target
+// 	".header-scroll",
+// 	//duration
+// 	1,
+// 	//vars
+// 	{
+// 		x:"+=100px"
+// 	}
+// )
 
-const shoeAnimation = new TweenMax();
+// const shoeAnimation = TweenMax();
 
-shoeAnimation
-	.reverse(
-	".shoe-container",
-	4,
-	{
-		x:"10px"
-	}
+// shoeAnimation
+// 	.reverse(
+// 	".shoe-container",
+// 	4,
+// 	{
+// 		x:"10px",
+// 	}
 
-	)
+// );
 
-	// .to(
-	// 		// target
-	// 	".shoe-container",
-	// 	//duration
-	// 	1,
-	// 	//vars
-	// 	{
-	// 		x:"100px"
-	// 	}
-	// ).from(
-	// 	// target
-	// 	".shoe-container",
-	// 	//duration
-	// 	1,
-	// 	//vars
-	// 	{
-	// 		x:"0",
-	// 		delay: 2
-	// 	}
-	// )
+// // const footerAnimation = new TimelineMax();
 
-const footerAnimation = TimelineMax.yoyo();
-
-footerAnimation
-	.yoyo(
-	// target
-	".footer",
-	// duration
-	3,
-	//vars {
-		x:"100"
-	}
-)
+// // footerAnimation.yoyo(true).repeat(3).timeScale(2).play(0.5);
 
 
 
