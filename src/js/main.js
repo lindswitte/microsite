@@ -14,7 +14,8 @@ const headerToAnimation = TweenMax.to(
 	1, 
 	//vars
 	{
-		x: "100px"
+		x: "100px",
+		y: "50px"
 	}
 );
 
@@ -26,7 +27,8 @@ const headerFromAnimation = TweenMax.from(
 	//vars
 	{
 		x: "100px",
-		delay: .5,
+		y: "-50px",
+		delay: 1
 	}
 );
 
@@ -45,9 +47,7 @@ shoeAnimation.staggerTo(
 		x: "+=300px",
 	},
 	0.2
-)
-
-shoeAnimation.to(
+).to(
 	'.shoe-container',
 	// duration 
 	1, 
@@ -55,7 +55,7 @@ shoeAnimation.to(
 	{
 		x: "-=300px",
 	}
-
+	
 );
 
 
