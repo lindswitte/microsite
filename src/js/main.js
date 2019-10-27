@@ -4,37 +4,100 @@ to verify that you're working in the right files.`)
 
 console.dir(TweenMax);
 
-// declaring a new TweenMax function
 // Header Animation
 
-const headerToAnimation = TweenMax.to(
-	//target
-	'.header-scroll',
-	// duration 
-	1, 
-	//vars
-	{
-		x: "100px",
-		y: "50px"
-	}
-);
+const headerAnimation = new TimelineMax();
+let headerObject = document.querySelector('.header-scroll');
 
-const headerFromAnimation = TweenMax.from(
-	//target
-	'.header-scroll',
+console.dir(headerObject);
+
+let originalPOS = {}
+	originalPOS.x = headerObject.style.x;
+	originalPOS.y = headerObject.style.y;
+
+headerAnimation.to(
+	headerObject,
 	// duration 
 	1, 
 	//vars
 	{
-		x: "100px",
-		y: "-50px",
-		delay: 1
+		x: "-200px",
+		y: "-10px"
 	}
-);
+).to(
+	headerObject,
+	// duration 
+	1, 
+	//vars
+	{
+		x: "200px",
+		y: "10px"
+	}
+).to(
+	headerObject,
+	// duration 
+	1, 
+	//vars
+	{
+		x: "-200px",
+		y: "10px"
+	}
+).to(
+	headerObject,
+	// duration 
+	1, 
+	//vars
+	{
+		x: originalPOS.x,
+		y: originalPOS.y
+	}
+)
+
+// .to(
+// 	headerObject,
+// 	// duration 
+// 	1, 
+// 	//vars
+// 	{
+// 		x: "200px",
+// 		y: "-10px"
+// 	}
+// );
+// TRANSFORM ORIGIN -100, 360 ROTATION
+
+
+
+
+
+// const headerAnimation = new TimelineMax();
+
+// const headerToAnimation = TweenMax.to(
+// 	//target
+// 	'.header-scroll',
+// 	// duration 
+// 	1, 
+// 	//vars
+// 	{
+// 		x: "100px",
+// 		y: "50px"
+// 	}
+// );
+
+// const headerFromAnimation = TweenMax.from(
+// 	//target
+// 	'.header-scroll',
+// 	// duration 
+// 	1, 
+// 	//vars
+// 	{
+// 		x: "100px",
+// 		y: "-50px",
+// 		delay: 1
+// 	}
+// );
 
 
 // Shoe Animation
-
 const shoeAnimation = new TimelineMax();
 
 shoeAnimation.staggerTo(
@@ -58,10 +121,7 @@ shoeAnimation.staggerTo(
 	
 );
 
-
 // Footer Animation
-
-
 const footerFromAnimation = TweenMax.from(
 	//target
 	'.footer',
@@ -84,6 +144,9 @@ const footerToAnimation = TweenMax.to(
 		y: "100px"
 	}
 );
+
+
+
 
 
 
@@ -147,16 +210,3 @@ const footerToAnimation = TweenMax.to(
 
 
 
-
-
-
-
-
-
-
-/* const staggeredHeaders = TweenMax.staggerFrom(
-	'.header-scroll',  
-	0.5,
-	{x:'-=100%'},
-	0.5
-);*/
